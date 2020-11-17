@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {{title}}
+    {{request.user}}
+    {{request.path}}
+    {{user.is_authenticated}}
+    {% for num in my_list %}
+        <li>{{num}}</li>
+    {% endfor%}
+
+{% endblock %}
